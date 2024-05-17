@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+
+members = [
+	"deadlocker",
+	"deadlocker_derive"
+, "examples/custom_locks_example", "examples/async_example", "examples/basic_example"]

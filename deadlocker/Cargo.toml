@@ -1,0 +1,17 @@
+[package]
+name = "deadlocker"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+deadlocker_derive = { optional = true, path = "../deadlocker_derive" }
+
+[dev-dependencies]
+deadlocker_derive = { path = "../deadlocker_derive" }
+
+[features]
+default = ["derive"]
+
+derive = ["deadlocker_derive"]
