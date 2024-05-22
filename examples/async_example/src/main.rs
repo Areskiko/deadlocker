@@ -8,11 +8,11 @@ type Baz = u8;
 
 #[derive(Locker)]
 struct MyStruct {
-    #[is_async]
+    #[async_lock]
     foo: Arc<Mutex<Foo>>,
-    #[is_async]
+    #[async_lock]
     bar: Arc<Mutex<Bar>>,
-    #[is_async]
+    #[async_lock]
     baz: Arc<Mutex<Baz>>,
 }
 

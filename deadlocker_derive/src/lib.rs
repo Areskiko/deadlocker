@@ -18,7 +18,7 @@ mod state;
 const DEFAULT_OUTER_TYPE: &str = "Arc<Mutex<(.*)>>";
 const OUTER_TYPE: &str = "outer_type";
 const INNER_TYPE: &str = "inner_type";
-const ASYNC: &str = "is_async";
+const ASYNC: &str = "async_lock";
 const RESULT: &str = "result";
 const LOCK_METHOD: &str = "lock_method";
 const INCLUDE: &str = "include";
@@ -29,7 +29,7 @@ const EXCLUDE: &str = "exclude";
     attributes(
         outer_type,
         inner_type,
-        is_async,
+        async_lock,
         lock_method,
         result,
         include,

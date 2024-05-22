@@ -104,15 +104,15 @@ them, and this takes precedence over [outer_type](#outer_type)
 #[inner_type = "usize"]
 ```
 
-### is_async
+### async_lock
 
 Marks the lock as async, this causes the final `lock` method in a chain
-containing an `is_async` marked field to become asynchronous as well. This
+containing an `async_lock` marked field to become asynchronous as well. This
 does not affect other locks in the struct, so the final `lock` method needn't be
 asynchronous just because some of the locks are.
 
 ```rust
-#[is_async]
+#[async_lock]
 ```
 
 ### lock_method
