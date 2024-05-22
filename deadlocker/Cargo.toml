@@ -2,14 +2,22 @@
 name = "deadlocker"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+authors = ["Stefan Mack <developer@mack.aleeas.com>"]
+categories = ["synchronization", "lock", "mutex"]
+description = "Bringing builder pattern to defeat deadlocks"
+documentation = "https://docs.rs/deadlocker"
+homepage = "https://github.com/Areskiko/deadlocker"
+keywords = ["mutex", "lock", "deadlock", "deadlocker"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Areskiko/deadlocker"
+rust-version = "1.65"
 
 [dependencies]
-deadlocker_derive = { optional = true, path = "../deadlocker_derive" }
+deadlocker_derive = { version = "0", optional = true, path = "../deadlocker_derive" }
 
 [dev-dependencies]
-deadlocker_derive = { path = "../deadlocker_derive" }
+deadlocker_derive = { version = "0", path = "../deadlocker_derive" }
 
 [features]
 default = ["derive"]
